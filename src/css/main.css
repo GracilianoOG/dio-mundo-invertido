@@ -217,6 +217,11 @@ label {
   background-color: var(--field-background-color);
   color: var(--primary-color-contrast);
   padding: 8px;
+  transition: border-color 0.75s;
+}
+.form__field:focus-visible {
+  border-color: black;
+  outline: none;
 }
 .form__label {
   margin-bottom: 8px;
