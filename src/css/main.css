@@ -98,6 +98,7 @@ body {
   font-family: var(--featured-font-family);
   padding: 16px 32px;
   text-transform: uppercase;
+  transition: background-color 1s;
   font-weight: 900;
 }
 .header__btn:hover {
