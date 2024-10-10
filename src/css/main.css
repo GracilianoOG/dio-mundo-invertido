@@ -236,6 +236,10 @@ label {
   color: var(--primary-color-contrast);
   max-width: 300px;
 }
+.form__btn:hover {
+  background-color: var(--primary-color-contrast);
+  color: var(--field-background-color);
+}
 
 .title {
   color: var(--primary-color);
