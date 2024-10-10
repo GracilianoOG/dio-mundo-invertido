@@ -65,6 +65,17 @@ main {
   position: relative;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-family: var(--featured-font-family);
+  padding: 16px 32px;
+  text-transform: uppercase;
+  transition: background-color 1s;
+  font-weight: 900;
+}
+
 .header {
   background-color: var(--header-background-color);
   display: flex;
@@ -102,15 +113,7 @@ main {
 
   &__btn {
     border: 3px solid var(--primary-color);
-    background-color: transparent;
     color: var(--primary-color);
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-family: var(--featured-font-family);
-    padding: 16px 32px;
-    text-transform: uppercase;
-    transition: background-color 1s;
-    font-weight: 900;
 
     &:hover {
       background-color: var(--primary-color);
@@ -193,6 +196,50 @@ main {
   }
 }
 
+.form-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.form {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  text-align: left;
+
+  &__field {
+    border: 2px solid var(--primary-color-contrast);
+    background-color: var(--field-background-color);
+    color: var(--primary-color-contrast);
+    padding: 8px;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+  }
+
+  &__field {
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    align-self: center;
+    border: none;
+    background-color: var(--field-background-color);
+    color: var(--primary-color-contrast);
+    max-width: 300px;
+  }
+}
+
 .title {
   color: var(--primary-color);
   font-family: var(--featured-font-family);
@@ -202,6 +249,15 @@ main {
 
   &--most-watched {
     max-width: 750px;
+  }
+
+  &--dd {
+    width: 600px;
+  }
+
+  &--join {
+    text-align: left;
+    flex-basis: 30%;
   }
 }
 
@@ -222,6 +278,13 @@ main {
     & .container {
       width: 100%;
     }
+  }
+
+  &--form {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
   }
 }
 
