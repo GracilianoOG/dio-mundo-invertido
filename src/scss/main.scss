@@ -205,6 +205,17 @@ button {
 .form-container {
   flex-basis: 50%;
   position: relative;
+
+  &::before {
+    background-color: var(--highlight-color);
+    content: "";
+    height: 100%;
+    left: 24px;
+    position: absolute;
+    top: 24px;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .form {
