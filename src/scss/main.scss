@@ -144,6 +144,28 @@ main {
   }
 }
 
+.trailer {
+  background-color: var(--primary-color);
+
+  &__frame {
+    border: 2px solid;
+    border-image: linear-gradient(
+      var(--primary-color),
+      var(--primary-color-contrast)
+    );
+    border-image-slice: 10;
+    bottom: 24px;
+    display: block;
+    left: 24px;
+    position: relative;
+  }
+}
+
+.season-info {
+  text-align: right;
+  width: 53%;
+}
+
 .inverted-world {
   width: 60%;
 }
