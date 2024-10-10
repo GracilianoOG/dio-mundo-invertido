@@ -156,12 +156,36 @@ main {
   width: 60%;
 }
 
+.gallery {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+}
+.gallery__item {
+  --size: 250px;
+  box-sizing: initial;
+  border: 3px solid var(--primary-color);
+  height: var(--size);
+  outline: 20px solid var(--highlight-color);
+  width: var(--size);
+}
+.gallery__img {
+  --size: 100%;
+  border: 10px solid var(--highlight-color);
+  height: var(--size);
+  object-fit: cover;
+  width: var(--size);
+}
+
 .title {
   color: var(--primary-color);
   font-family: var(--featured-font-family);
   font-size: 3rem;
   margin-bottom: 40px;
   text-transform: uppercase;
+}
+.title--most-watched {
+  max-width: 750px;
 }
 
 .section {
@@ -171,6 +195,14 @@ main {
 }
 .section--inverted-world {
   align-items: center;
+}
+.section--gallery {
+  background: var(--background-lamp-image) 120%/50% no-repeat;
+  justify-content: center;
+  width: 100%;
+}
+.section--gallery .container {
+  width: 100%;
 }
 
 .container {

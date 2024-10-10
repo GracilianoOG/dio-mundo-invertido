@@ -170,12 +170,39 @@ main {
   width: 60%;
 }
 
+.gallery {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+
+  &__item {
+    --size: 250px;
+    box-sizing: initial;
+    border: 3px solid var(--primary-color);
+    height: var(--size);
+    outline: 20px solid var(--highlight-color);
+    width: var(--size);
+  }
+
+  &__img {
+    --size: 100%;
+    border: 10px solid var(--highlight-color);
+    height: var(--size);
+    object-fit: cover;
+    width: var(--size);
+  }
+}
+
 .title {
   color: var(--primary-color);
   font-family: var(--featured-font-family);
   font-size: 3rem;
   margin-bottom: 40px;
   text-transform: uppercase;
+
+  &--most-watched {
+    max-width: 750px;
+  }
 }
 
 .section {
@@ -185,6 +212,16 @@ main {
 
   &--inverted-world {
     align-items: center;
+  }
+
+  &--gallery {
+    background: var(--background-lamp-image) 120% / 50% no-repeat;
+    justify-content: center;
+    width: 100%;
+
+    & .container {
+      width: 100%;
+    }
   }
 }
 
