@@ -58,6 +58,13 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .header {
   background-color: var(--header-background-color);
   display: flex;
@@ -135,4 +142,30 @@ body {
     transform: rotateZ(180deg) scaleX(-1);
     top: 3px;
   }
+}
+
+.inverted-world {
+  width: 60%;
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: var(--featured-font-family);
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+
+  &--inverted-world {
+    align-items: center;
+  }
+}
+
+.container {
+  max-width: 1200px;
 }
