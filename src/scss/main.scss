@@ -28,11 +28,11 @@
   --header-background-color: #e3e3e3;
   --highlight-color: #000000;
   --featured-font-family: "Archivo", sans-serif;
-  --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-top-image-src: url("../assets/images/characters/kids-on-the-bike.svg");
   --character-top-image-color: #ffffff;
-  --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-bottom-image-src: url("../assets/images/characters/inverted-world-monster.svg");
   --character-bottom-image-color: #e5e5e5;
-  --background-lamp-image: url("../images/backgrounds/lamps.png");
+  --background-lamp-image: url("../assets/images/backgrounds/lamps.png");
   --footer-background-color: #b5bbbf;
 }
 
@@ -46,11 +46,11 @@
   --header-background-color: #220f0f;
   --highlight-color: #ffffff;
   --featured-font-family: "Rubik Glitch", sans-serif;
-  --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-bottom-image-src: url("../assets/images/characters/kids-on-the-bike.svg");
   --character-bottom-image-color: rgba(255, 255, 255, 0.1);
-  --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-top-image-src: url("../assets/images/characters/inverted-world-monster.svg");
   --character-top-image-color: #000;
-  --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+  --background-lamp-image: url("../assets/images/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
 }
 
@@ -62,19 +62,17 @@ body {
   background-color: var(--header-background-color);
   display: flex;
   justify-content: center;
-  min-height: 850px;
+  min-height: 970px;
   text-align: center;
   position: relative;
 
   &::before {
-    background-image: url("../assets/images/banner/florest.webp");
+    background-image: url("../assets/images/backgrounds/forest.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 90%;
+    background-position: center;
     content: "";
-    filter: saturate(0);
     height: 100%;
-    opacity: 0.2;
     position: absolute;
     width: 100%;
   }
@@ -111,5 +109,19 @@ body {
       background-color: var(--primary-color);
       color: var(--primary-color-contrast);
     }
+  }
+}
+
+.world-characters {
+  max-width: 900px;
+  position: absolute;
+  width: 100%;
+
+  &--top {
+    background-color: var(--character-top-image-color);
+    bottom: -3px;
+    height: 100%;
+    -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
+    mask: var(--character-top-image-src) bottom / 100% no-repeat;
   }
 }
