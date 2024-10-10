@@ -116,3 +116,13 @@ body {
   -webkit-mask: var(--character-top-image-src) bottom/100% no-repeat;
   mask: var(--character-top-image-src) bottom/100% no-repeat;
 }
+.world-characters--bottom {
+  background-color: var(--character-bottom-image-color);
+  bottom: -3px;
+  height: 500px;
+  -webkit-mask: var(--character-bottom-image-src) bottom/100% no-repeat;
+  mask: var(--character-bottom-image-src) bottom/100% no-repeat;
+  position: relative;
+  transform: rotateZ(180deg) scaleX(-1);
+  top: 3px;
+}
