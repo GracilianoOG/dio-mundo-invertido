@@ -57,14 +57,29 @@ body {
 }
 
 .header {
+  background-color: var(--header-background-color);
   display: flex;
   justify-content: center;
   min-height: 850px;
   text-align: center;
+  position: relative;
+}
+.header::before {
+  background-image: url("../assets/images/banner/florest.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 90%;
+  content: "";
+  filter: saturate(0);
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
 }
 .header__content {
   max-width: 800px;
   padding: 80px 20px;
+  z-index: 2;
 }
 .header__logo {
   width: 100%;
@@ -76,6 +91,7 @@ body {
 }
 .header__btn {
   border: 3px solid var(--primary-color);
+  background-color: transparent;
   color: var(--primary-color);
   cursor: pointer;
   font-size: 1.25rem;
