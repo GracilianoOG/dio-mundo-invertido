@@ -80,6 +80,14 @@ p {
   --footer-background-color: #000;
 }
 
+.inverted {
+  transition: transform 1s;
+}
+
+.dark-theme .inverted {
+  transform: rotateZ(180deg) scaleX(-1);
+}
+
 .header {
   background-color: var(--header-background-color);
   display: flex;

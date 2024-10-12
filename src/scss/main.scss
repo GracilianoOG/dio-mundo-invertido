@@ -6,6 +6,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
+.inverted {
+  transition: transform 1s;
+}
+
+.dark-theme .inverted {
+  transform: rotateZ(180deg) scaleX(-1);
+}
+
 .header {
   background-color: var(--header-background-color);
   display: flex;
