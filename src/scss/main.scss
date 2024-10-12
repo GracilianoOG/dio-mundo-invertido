@@ -240,6 +240,18 @@
   }
 }
 
+.main-content {
+  &::before {
+    background: var(--page-background) no-repeat, url("../assets/images/backgrounds/florest.png") no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
 .footer {
   align-items: center;
   background-color: var(--footer-background-color);
