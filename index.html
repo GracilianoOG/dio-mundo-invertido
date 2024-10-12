@@ -6,12 +6,12 @@
   <title>Mundo Invertido</title>
   <link rel="stylesheet" href="./src/css/main.css">
 </head>
-<body class="light-theme">
+<body class="light-theme js-theme-wrapper">
   <header class="header">
     <div class="header__content">
       <img class="header__logo" src="./src/assets/images/banner/logo.svg" alt="Mundo invertido">
       <p class="header__description">Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido!</p>
-      <button class="header__btn">Inverter Mundos</button>
+      <button class="header__btn js-theme-switch">Inverter Mundos</button>
     </div>
     <div class="world-characters world-characters--top"></div>
   </header>
@@ -78,5 +78,16 @@
     </p>
     <img src="./src/assets/images/footer/logo.svg" alt="">
   </footer>
+  <script>
+    const btn = document.querySelector(".js-theme-switch");
+    const body = document.querySelector(".js-theme-wrapper");
+
+    const switchTheme = () => {
+      body.classList.toggle("light-theme");
+      body.classList.toggle("dark-theme");
+    }
+
+    btn.addEventListener("click", switchTheme);
+  </script>
 </body>
 </html>

@@ -40,6 +40,10 @@ label {
   font-family: "Libre Baskerville", serif;
 }
 
+p {
+  color: var(--highlight-color);
+}
+
 .light-theme {
   --page-background: linear-gradient(
     180deg,
