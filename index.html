@@ -88,16 +88,17 @@
     const MUSIC_DIR = "./src/assets/music/";
     const NORMAL_MUSIC = `${MUSIC_DIR}normal-world.mpeg`;
     const INVERTED_MUSIC = `${MUSIC_DIR}inverted-world.mpeg`;
+    const themes = { light: "light-theme", dark: "dark-theme" };
     musicPlayer.volume = 0.2;
 
     const chooseMusic = () => {
-      musicPlayer.src = wrapper.classList.contains("light-theme") ? NORMAL_MUSIC : INVERTED_MUSIC;
+      musicPlayer.src = wrapper.classList.contains(themes.light) ? NORMAL_MUSIC : INVERTED_MUSIC;
       musicPlayer.play();
     }
 
     const switchTheme = () => {
-      wrapper.classList.toggle("light-theme");
-      wrapper.classList.toggle("dark-theme");
+      wrapper.classList.toggle(themes.light);
+      wrapper.classList.toggle(themes.dark);
       chooseMusic();
     }
 
