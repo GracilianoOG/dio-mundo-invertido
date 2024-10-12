@@ -44,6 +44,10 @@ p {
   color: var(--highlight-color);
 }
 
+textarea {
+  resize: none;
+}
+
 .light-theme {
   --page-background: linear-gradient(
     180deg,
