@@ -240,6 +240,43 @@
   }
 }
 
+.footer {
+  align-items: center;
+  background-color: var(--footer-background-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+  text-align: center;
+
+  &__description {
+    max-width: 700px;
+    margin-bottom: 24px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    background: url("../assets/images/footer/tape.svg") no-repeat;
+    background-size: contain;
+    bottom: -30px;
+    height: 200px;
+    position: absolute;
+    width: 300px;
+  }
+
+  &::before {
+    left: -50px;
+    transform: rotateZ(-10deg);
+  }
+
+  &::after {
+    right: -50px;
+    transform: rotateZ(10deg);
+  }
+}
+
 .container {
   max-width: 1200px;
 }
