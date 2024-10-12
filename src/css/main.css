@@ -134,7 +134,7 @@ label {
   height: 500px;
   -webkit-mask: var(--character-bottom-image-src) bottom/100% no-repeat;
   mask: var(--character-bottom-image-src) bottom/100% no-repeat;
-  position: relative;
+  position: absolute;
   transform: rotateZ(180deg) scaleX(-1);
   top: 3px;
 }
@@ -268,6 +268,7 @@ label {
 }
 .section--inverted-world {
   align-items: center;
+  margin-top: 275px;
 }
 .section--gallery {
   background: var(--background-lamp-image) 120%/50% no-repeat;
