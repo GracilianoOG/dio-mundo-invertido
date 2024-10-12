@@ -344,6 +344,10 @@ textarea {
   transform: rotateZ(10deg);
 }
 
+.club-container {
+  max-width: 1060px;
+}
+
 .container {
   max-width: 1200px;
 }
