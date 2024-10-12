@@ -60,13 +60,13 @@
         <div class="form-container">
           <form class="form">
             <label class="form__label" for="name">Nome Completo</label>
-            <input class="form__field" type="text" name="name" id="name">
+            <input class="form__field" type="text" name="name" id="name" maxlength="80" required>
             <label class="form__label" for="email">E-mail</label>
-            <input class="form__field" type="email" name="email" id="email">
+            <input class="form__field" type="email" name="email" id="email" maxlength="80" required>
             <label class="form__label" for="level">Level</label>
-            <input class="form__field" type="text" name="level" id="level">
+            <input class="form__field" type="text" name="level" id="level" maxlength="80" required>
             <label class="form__label" for="character">Personagem</label>
-            <textarea class="form__field" name="character" id="character" cols="30" rows="6"></textarea>
+            <textarea class="form__field" name="character" id="character" cols="30" rows="6" maxlength="300" required></textarea>
             <button class="form__btn" type="submit">Me inscrever</button>
           </form>
         </div>
