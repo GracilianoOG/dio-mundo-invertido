@@ -78,16 +78,32 @@
     </p>
     <img src="./src/assets/images/footer/logo.svg" alt="">
   </footer>
+  <audio class="js-music-player" loop>
+    <source src="./src/assets/music/normal-world.mpeg">
+  </audio>
   <script>
-    const btn = document.querySelector(".js-theme-switch");
-    const body = document.querySelector(".js-theme-wrapper");
+    const themeBtn = document.querySelector(".js-theme-switch");
+    const wrapper = document.querySelector(".js-theme-wrapper");
+    const musicPlayer = document.querySelector(".js-music-player");
+    const MUSIC_DIR = "./src/assets/music/";
+    const NORMAL_MUSIC = `normal-world.mpeg`;
+    const INVERTED_MUSIC = `inverted-world.mpeg`;
 
-    const switchTheme = () => {
-      body.classList.toggle("light-theme");
-      body.classList.toggle("dark-theme");
+    const chooseMusic = () => {
+      const musicName = wrapper.classList.contains("light-theme") ? NORMAL_MUSIC : INVERTED_MUSIC;
+      musicPlayer.src = MUSIC_DIR + musicName;
+      musicPlayer.volume = 0.2;
+      musicPlayer.play();
     }
 
-    btn.addEventListener("click", switchTheme);
+    const switchTheme = () => {
+      wrapper.classList.toggle("light-theme");
+      wrapper.classList.toggle("dark-theme");
+      chooseMusic();
+    }
+
+    themeBtn.addEventListener("click", switchTheme);
+    window.addEventListener("click", () => musicPlayer.play(), { once: true });
   </script>
 </body>
 </html>
