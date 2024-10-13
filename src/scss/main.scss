@@ -154,12 +154,13 @@
   position: relative;
 
   &::before {
+    --position: 24px;
     background-color: var(--highlight-color);
     content: "";
     height: 100%;
-    left: 24px;
+    left: var(--position);
     position: absolute;
-    top: 24px;
+    top: var(--position);
     width: 100%;
     z-index: -1;
   }
@@ -222,7 +223,7 @@
 
   &--dd {
     margin-bottom: 0;
-    width: 600px;
+    max-width: 600px;
   }
 
   &--join {
@@ -321,4 +322,98 @@
 
 .highlight {
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    min-height: 730px;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  .section {
+    flex-direction: column;
+    margin-bottom: 120px;
+
+    &--gallery {
+      align-items: center;
+      background: none;
+    }
+
+    &--form {
+      gap: 60px;
+    }
+  }
+
+  .inverted-world {
+    margin-bottom: 40px;
+    text-align: center;
+    width: auto;
+  }
+
+  .poster {
+    width: 85%;
+  }
+
+  .trailer {
+    background-color: transparent;
+    margin-bottom: 50px;
+
+    &__frame {
+      width: 95%;
+      position: static;
+      margin: 0 auto;
+    }
+  }
+
+  p,
+  .title {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    max-width: 100%;
+
+    &--join {
+      margin-bottom: 60px;
+    }
+  }
+
+  .season-info {
+    width: auto;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .gallery {
+    align-items: center;
+    flex-direction: column;
+
+    &__item {
+      --size: 220px;
+    }
+  }
+
+  .form-content {
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .footer::before,
+  .footer::after {
+    height: 100px;
+    width: 150px;
+  }
 }
