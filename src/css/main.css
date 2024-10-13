@@ -172,9 +172,16 @@ textarea {
   text-align: right;
   width: 53%;
 }
+.season-info__title {
+  max-width: 500px;
+  margin-left: auto;
+}
 
 .inverted-world {
   width: 60%;
+}
+.inverted-world__title {
+  max-width: 500px;
 }
 
 .gallery {
