@@ -268,7 +268,7 @@ textarea {
 .title {
   color: var(--primary-color);
   font-family: var(--featured-font-family);
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 3rem);
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -405,7 +405,6 @@ textarea {
     text-align: center;
   }
   .title {
-    font-size: 2.5rem;
     max-width: 100%;
   }
   .title--join {
