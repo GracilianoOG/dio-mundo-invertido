@@ -397,9 +397,10 @@ textarea {
     margin-bottom: 50px;
   }
   .trailer__frame {
-    width: 95%;
-    position: static;
+    height: 50vw;
     margin: 0 auto;
+    position: static;
+    width: 95vw;
   }
   p,
   .title {
