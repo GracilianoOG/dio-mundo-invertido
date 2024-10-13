@@ -389,6 +389,7 @@ textarea {
     width: auto;
   }
   .poster {
+    max-width: 350px;
     width: 85%;
   }
   .trailer {
