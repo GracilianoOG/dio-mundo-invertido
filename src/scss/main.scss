@@ -296,9 +296,9 @@
     background: url("../assets/images/footer/tape.svg") no-repeat;
     background-size: contain;
     bottom: -30px;
-    height: 200px;
+    height: clamp(100px, 16vw, 200px);
     position: absolute;
-    width: 300px;
+    width: clamp(150px, 24vw, 300px);
   }
 
   &::before {
@@ -409,11 +409,5 @@
     &::before {
       display: none;
     }
-  }
-
-  .footer::before,
-  .footer::after {
-    height: 100px;
-    width: 150px;
   }
 }
