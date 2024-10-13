@@ -241,7 +241,7 @@
 
   &--inverted-world {
     align-items: center;
-    margin-top: 275px;
+    margin-top: min(60vw, 400px);
   }
 
   &--gallery {
@@ -324,7 +324,7 @@
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .header {
     min-height: 730px;
   }
