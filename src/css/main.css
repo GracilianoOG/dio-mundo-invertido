@@ -419,7 +419,9 @@ textarea {
   }
   .gallery {
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
   }
   .gallery__item {
     --size: 220px;

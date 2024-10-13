@@ -392,7 +392,9 @@
 
   .gallery {
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 
     &__item {
       --size: 220px;
