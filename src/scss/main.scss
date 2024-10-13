@@ -337,6 +337,10 @@
     flex-direction: column;
     margin-bottom: 120px;
 
+    &--trailer {
+      gap: 50px;
+    }
+
     &--gallery {
       align-items: center;
       background: none;
@@ -360,7 +364,6 @@
 
   .trailer {
     background-color: transparent;
-    margin-bottom: 50px;
 
     &__frame {
       height: 50vw;
@@ -384,6 +387,7 @@
   }
 
   .season-info {
+    order: -1;
     width: auto;
 
     &__title {

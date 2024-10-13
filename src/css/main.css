@@ -376,6 +376,9 @@ textarea {
     flex-direction: column;
     margin-bottom: 120px;
   }
+  .section--trailer {
+    gap: 50px;
+  }
   .section--gallery {
     align-items: center;
     background: none;
@@ -394,7 +397,6 @@ textarea {
   }
   .trailer {
     background-color: transparent;
-    margin-bottom: 50px;
   }
   .trailer__frame {
     height: 50vw;
@@ -413,6 +415,7 @@ textarea {
     margin-bottom: 60px;
   }
   .season-info {
+    order: -1;
     width: auto;
   }
   .season-info__title {
