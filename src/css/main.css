@@ -156,15 +156,17 @@ textarea {
 }
 
 .trailer {
+  --shift: 24px;
   background-color: var(--primary-color);
+  margin-right: calc(var(--shift) + 6px);
 }
 .trailer__frame {
   border: 2px solid;
   border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
   border-image-slice: 10;
-  bottom: 24px;
+  bottom: var(--shift);
   display: block;
-  left: 24px;
+  left: var(--shift);
   position: relative;
 }
 
@@ -384,6 +386,7 @@ textarea {
   }
   .trailer {
     background-color: transparent;
+    margin-right: 0;
   }
   .trailer__frame {
     height: 50vw;
