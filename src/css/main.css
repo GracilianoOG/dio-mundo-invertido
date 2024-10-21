@@ -215,17 +215,6 @@ textarea {
   flex-basis: 50%;
   position: relative;
 }
-.form-container::before {
-  --position: 24px;
-  background-color: var(--highlight-color);
-  content: "";
-  height: 100%;
-  left: var(--position);
-  position: absolute;
-  top: var(--position);
-  width: 100%;
-  z-index: -1;
-}
 
 .form {
   background-color: var(--primary-color);
@@ -359,18 +348,16 @@ textarea {
 
 .container {
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .highlight {
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .header {
     min-height: 730px;
-  }
-  .container {
-    max-width: 95%;
   }
   .section {
     flex-direction: column;
@@ -402,7 +389,7 @@ textarea {
     height: 50vw;
     margin: 0 auto;
     position: static;
-    width: 95vw;
+    width: 100%;
   }
   p,
   .title {
@@ -438,5 +425,21 @@ textarea {
   }
   .form-container::before {
     display: none;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .container {
+    padding: 0;
+  }
+  .form-container::before {
+    --position: 24px;
+    background-color: var(--highlight-color);
+    content: "";
+    height: 100%;
+    left: var(--position);
+    position: absolute;
+    top: var(--position);
+    width: 100%;
+    z-index: -1;
   }
 }
