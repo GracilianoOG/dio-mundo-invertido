@@ -8,7 +8,9 @@
 
 # 💀 Stranger Things: Mundo Invertido
 
-Esse projeto faz parte do desafio da Digital Innovation One de desenvolver uma página com o tema da série "Stranger Things" baseado no design (Figma) fornecido. O projeto seria desenvolvido apenas com HTML e CSS, mas decidi adicionar o Sass para organizar melhor o projeto.
+Esse projeto faz parte do desafio da Digital Innovation One de desenvolver uma página com o tema da série "Stranger Things" baseado no design (Figma) fornecido. O site seria desenvolvido apenas com HTML e CSS, mas decidi adicionar o Sass para organizar melhor o projeto.
+
+Pude botar a mão na passa e experimentar recursos que nunca/pouco usava, como o `mask` e o `border-image`. Além disso, durante as aulas, aprendi bastante sobre HTML semântico e acessibilidade web. Foi extremamente divertido desenvolver esse site, agradeço à Digital Innovation One pelo desafio!
 
 ## 👻 Tecnologias utilizadas
 
@@ -16,7 +18,13 @@ Esse projeto faz parte do desafio da Digital Innovation One de desenvolver uma p
 - CSS para estilização
 - Sass para pré-processar o CSS
 - JavaScript para interatividade
+
+## 🧑🏻‍💻 Minhas alterações
+
 - Padrão BEM para nomear classes CSS
+- Layout responsivo pro mobile
+- Design mais parecido com o Figma
+- Ícone da série Stranger Things (favicon)
 
 ## 🎃 Links úteis
 
